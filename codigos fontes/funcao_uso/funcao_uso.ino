@@ -12,6 +12,9 @@ void setup() {
 void loop() {
   
   x=soma(1,3);
+  string a = Serial.readStringUntil("/n");
+
+  
 
   
 }

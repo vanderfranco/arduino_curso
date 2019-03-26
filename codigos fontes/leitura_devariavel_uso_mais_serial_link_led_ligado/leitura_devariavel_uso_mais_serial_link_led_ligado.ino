@@ -1,4 +1,4 @@
-int pinoLed = 13; 
+int pinoLed = 12; 
 int status = 0;
 void setup(){
   pinMode(pinoLed, OUTPUT); 
