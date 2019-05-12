@@ -2,20 +2,18 @@
 int AnalogValue;
 
 
+//.............................................
+// variavel de leitura
+
+int leitura = 0;
 
 void setup() {
+  //inicio comunicacao serial - usb - arduino
   Serial.begin(9600);
-  
 }
 
 void loop() {
-  if (AnalogValue <=900 && AnalogValue >=500) serial();
-}
-//..............................................
-//funcoes.......................................
-
-void serial(){
-  AnalogValue = analogRead(A0);
-  Serial.println(AnalogValue);
-  delay(50);
+  leitura = analogRead(A0);
+  Serial.println(leitura);
+  delay(100);
 }
