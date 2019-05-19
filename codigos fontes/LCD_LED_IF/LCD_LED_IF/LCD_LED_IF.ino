@@ -36,7 +36,7 @@ void writeLCD(int posC, int posL,int timeLCD, String texto){
   //Limpa a tela
   lcd.clear();
   
-  //Posiciona o cursor na coluna 3, linha 0;
+  
   lcd.setCursor(posC, posL);
   //Envia o texto entre aspas para o LCD
   lcd.print(texto);
